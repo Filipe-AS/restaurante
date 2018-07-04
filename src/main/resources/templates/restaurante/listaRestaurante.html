@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	  
+<head>
+	<title>FilmesApp
+	</title>
+	  
+</head>	  
+
+<body>
+	<h1> Lista de Restaurantes	</h1>
+	<h3><a href="/">Menu Principal</a></h3>		
+	<div th:each="restaurante : ${restaurantes}">
+		<div class="row">
+				<p><span th:text="${restaurante.codigo}"></span></p>
+				<p><span th:text="${restaurante.nome}"></span></p>
+				<p><span th:text="${restaurante.endereco}"></span></p>		
+		
+	   </div>
+	
+	
+		
+</body>
+	
+
+
+</html>
